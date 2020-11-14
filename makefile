@@ -1,6 +1,6 @@
 FLAGS = -Wall 
 
-all: mains maind 
+all: mains maind libmyMath.a libmyMath.so
 mains: main.o libmyMath.a	
 	gcc $(FLAGS) -o mains main.o libmyMath.a
 		
